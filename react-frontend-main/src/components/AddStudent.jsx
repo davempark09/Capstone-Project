@@ -70,7 +70,7 @@ class AddStudent extends Component {
                                   <div className="form-group">
                                       <label>Student ID: </label>
                                       <input placeholder="Id" name="id" className="form-control"
-                                         value={this.state.id} onChange={this.idHandler} />
+                                         value={this.state.id} onChange={this.idHandler}/>
                                    </div>   
                                    <div className="form-group">
                                       <label>Student Name: </label>
