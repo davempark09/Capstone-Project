@@ -443,3 +443,18 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-22 13:11:27.675
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-22 13:11:27.708
+!MESSAGE classpath=93 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-22 13:11:27.720
+!MESSAGE buffering callback sts4.classpath.xCgjddnJ demo false 93
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-22 13:11:27.724
+!MESSAGE executing callback sts4.classpath.xCgjddnJ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-22 13:11:27.781
+!MESSAGE executing callback sts4.classpath.xCgjddnJ SUCCESS [done]

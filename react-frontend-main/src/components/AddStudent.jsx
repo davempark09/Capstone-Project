@@ -37,6 +37,10 @@ class AddStudent extends Component {
 
     saveStudent = (e) => {
         e.preventDefault();
+        if (!this.state.name || !this.state.grade){
+            window.alert("Invalid Input")
+            return 
+        }
         let student={
            id: this.state.id,
            name: this.state.name,
@@ -70,7 +74,7 @@ class AddStudent extends Component {
                                   <div className="form-group">
                                       <label>Student ID: </label>
                                       <input placeholder="Id" name="id" className="form-control"
-                                         value={this.state.id} onChange={this.idHandler}/>
+                                         value={this.state.id} onChange={this.idHandler} />
                                    </div>   
                                    <div className="form-group">
                                       <label>Student Name: </label>
