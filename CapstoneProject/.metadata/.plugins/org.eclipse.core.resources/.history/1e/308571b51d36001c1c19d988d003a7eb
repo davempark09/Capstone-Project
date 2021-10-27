@@ -1,0 +1,52 @@
+package com.example.demo.model;
+
+import java.sql.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+@Entity
+@Table(name="expenses")
+public class Student {
+	@Id
+	private int id;
+	private String person;
+    private String category;
+    private int amount;
+    @JsonFormat(pattern="yyyy-MM-dd")
+    private Date birthday;
+      
+    public Student()
+    {
+    	
+    }
+    public Student(int id, String name, int grade) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.grade = grade;
+	}
+    
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getGrade() {
+		return grade;
+	}
+	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+	
+}

@@ -6,7 +6,7 @@ class Header extends Component {
             <div>
                 <header>
                     <nav className="navbar">
-                        <div><b>Students Management Application</b></div>
+                        <div><b>Expenses Management Application</b></div>
                     </nav>
                 </header>
             </div>

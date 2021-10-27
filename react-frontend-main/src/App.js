@@ -1,8 +1,8 @@
-import ListStudents from './components/ListStudents';
-import AddStudent from './components/AddStudent';
-import UpdateStudent from './components/UpdateStudent';
-import DeleteStudent from './components/DeleteStudent';
-import ViewStudent from './components/ViewStudent';
+import ListExpenses from './components/ListExpenses';
+import AddExpenses from './components/AddExpenses';
+import UpdateExpenses from './components/UpdateExpenses';
+import DeleteExpenses from './components/DeleteExpenses';
+import ViewExpenses from './components/ViewExpenses';
 
 import {BrowserRouter as Router,Route, Switch} from 'react-router-dom';
 import Header from './components/Header';
@@ -15,12 +15,12 @@ function App() {
           <Header />
             <div className="container">
               <Switch>
-                  <Route path="/" exact component={ListStudents}></Route>
-                  <Route path="/students" component={ListStudents}></Route>
-                  <Route path="/add-student" component={AddStudent}></Route>
-                  <Route path="/update-student/:id" component={UpdateStudent}></Route> 
-                  <Route path="/delete-student/:id" component={DeleteStudent}></Route> 
-                  <Route path="/view-student/:id" component={ViewStudent}></Route> 
+                  <Route path="/" exact component={ListExpenses}></Route>
+                  <Route path="/expenses" component={ListExpenses}></Route>
+                  <Route path="/add-expenses" component={AddExpenses}></Route>
+                  <Route path="/update-expenses/:id" component={UpdateExpenses}></Route> 
+                  <Route path="/delete-expenses/:id" component={DeleteExpenses}></Route> 
+                  <Route path="/view-expenses/:id" component={ViewExpenses}></Route> 
                   
               </Switch>
             </div>
