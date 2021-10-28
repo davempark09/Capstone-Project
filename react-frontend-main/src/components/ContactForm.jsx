@@ -4,7 +4,7 @@ import { faUser, faPhone, faEnvelopeSquare, faPencilAlt} from '@fortawesome/free
 
 
 function Form() {
-    
+
     const userIcon = <FontAwesomeIcon icon={faUser} />
     const phoneIcon = <FontAwesomeIcon icon={faPhone} />
     const envelopeIcon = <FontAwesomeIcon icon={faEnvelopeSquare} />

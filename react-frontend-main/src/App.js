@@ -7,12 +7,11 @@ import Formpage from './components/Formpage';
 import UserLogin from './components/UserLogin';
 import Aboutpage from './components/AboutApp';
 import RegisterPage from './components/RegisterPage';
-
-import './App.css';
-
-import {BrowserRouter as Router,Route, Switch} from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import './App.css';
+import {BrowserRouter as Router,Route, Switch} from 'react-router-dom';
+
 
 function App() {
     return (
@@ -31,11 +30,9 @@ function App() {
                   <Route path="/contact-form" component={Formpage}></Route> 
                   <Route path="/user-login" component={UserLogin}></Route> 
                   <Route path="/user-register" component={RegisterPage}></Route> 
-                  
               </Switch>
             </div>
             <Footer />
-            
           </Router>
         </div>
   );

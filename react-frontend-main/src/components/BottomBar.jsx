@@ -6,7 +6,7 @@ const FooterPage = () => {
     <MDBFooter color="unique-color" className="font-small pt-4 mt-4">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
-        <MDBCol md="6">
+          <MDBCol md="6">
             <h5 className="title">Web Application Links</h5>
             <ul>
               <li className="list-unstyled">
