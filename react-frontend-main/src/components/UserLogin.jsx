@@ -4,7 +4,9 @@ import LoginStuff from './LoginStuff';
 class UserLogin extends Component {
     render() {
         return (
-            <LoginStuff/>
+            <div className="overCont">
+                <LoginStuff/>
+            </div>
         );
     }
 }

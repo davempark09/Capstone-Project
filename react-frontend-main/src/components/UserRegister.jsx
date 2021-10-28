@@ -2,10 +2,13 @@ import React from 'react';
 import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 const UserRegister = (props) => {
+    
+    
   return (
-      <>
+      
+      <div className="cont">
       <h1>User Register Page</h1>
-    <Form>
+    <Form id='registerForm'>
       <Row form>
         <Col md={6}>
           <FormGroup>
@@ -58,7 +61,7 @@ const UserRegister = (props) => {
       </FormGroup>
       <Button>Sign Up</Button>
     </Form>
-    </>
+    </div>
   );
 }
 

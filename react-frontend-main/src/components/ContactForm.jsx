@@ -15,20 +15,20 @@ function Form() {
             <h1>Contact Form</h1>
             <form className="formSheet">
                 <div className="input">
-                    <input type="text" className="name" name="Name" required />
-                    <label htmlFor="name">{userIcon} Name</label>
+                    <input type="text" className="inputField" name="Name" required />
+                    <label htmlFor="name" className="labelField">{userIcon} Name</label>
                 </div>
                 <div className="input">
-                    <input type="text" className="number" name="Phone Number" required />
-                    <label htmlFor="number">{phoneIcon} Phone Number</label>
+                    <input type="text" className="inputField" name="Phone Number" required />
+                    <label htmlFor="number" className="labelField">{phoneIcon} Phone Number</label>
                 </div>
                 <div className="input">
-                    <input type="email" className="email" name="E-mail" required />
-                    <label htmlFor="email">{envelopeIcon} E-mail</label>
+                    <input type="email" className="inputField" name="E-mail" required />
+                    <label htmlFor="email" className="labelField">{envelopeIcon} E-mail</label>
                 </div>
                 <div className="input">
-                    <textarea className="message" rows="8" name="Message" required></textarea>
-                    <label htmlFor="message">{pencilIcon} Message</label>
+                    <textarea className="inputField" rows="8" name="Message" required></textarea>
+                    <label htmlFor="message" className="labelField">{pencilIcon} Message</label>
                 </div>
                 <button type="submit" className="formButton"> Submit</button>
             </form>
