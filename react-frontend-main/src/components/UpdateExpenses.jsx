@@ -38,7 +38,10 @@ class UpdateExpenses extends Component {
         });
            
      }
-     
+     cancelEntry = () => { 
+        document.getElementById("addForm").reset();
+      }
+
     idHandler=(event) => {
         this.setState({
              id: event.target.value});
@@ -94,7 +97,7 @@ class UpdateExpenses extends Component {
                <div className="container">
                    <div className="row">
                       <div className="card col-md-6 offset-md-3 offset-md-3">
-                          <h3 className="text-center">Update Expenses</h3>
+                          <h3 className="text-center">Update Entry</h3>
                           <div className="card-body">
                               <form>  
                                   <div className="form-group">
@@ -123,11 +126,12 @@ class UpdateExpenses extends Component {
                                          value={this.state.date} onChange={this.dateHandler} />
                                    </div>   
                                    <div className="form-group">
-                                      <label>Type: </label>
+                                      <label>Type (Savings/Expenses): </label>
                                       <input placeholder="Type" name="type" className="form-control"
                                          value={this.state.type} onChange={this.typeHandler} />
                                    </div>   
                                     <button className="btn btn-success" onClick={this.updateExpenses}> Update </button>
+                                    <button className="btn btn-warning" onClick={this.cancelEntry}> Reset </button>
                                     <button className="btn btn-danger" onClick={this.cancel.bind(this)}> Cancel </button>                    
                               </form>
                           </div>

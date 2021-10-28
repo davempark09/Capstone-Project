@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ExpensesService from '../services/ExpensesService';
 
+
 class AddExpenses extends Component {
     constructor(props)
     {
@@ -13,6 +14,7 @@ class AddExpenses extends Component {
            date:'',
            type:''
         }
+
       
         this.idHandler = this.idHandler.bind(this);
         this.personHandler = this.personHandler.bind(this);
@@ -23,6 +25,9 @@ class AddExpenses extends Component {
 
     }//constructor
 
+    cancelEntry = () => { 
+        document.getElementById("addForm").reset();
+      }
      
     idHandler=(event) => {
         this.setState({
@@ -73,7 +78,7 @@ class AddExpenses extends Component {
        
         
         
-    }//closing save method
+    };//closing save method
 
     cancel(){
         this.props.history.push('/Expenses');
@@ -85,9 +90,9 @@ class AddExpenses extends Component {
                <div className="container">
                    <div className="row">
                       <div className="card col-md-6 offset-md-3 offset-md-3">
-                          <h3 className="text-center">Add Expenses</h3>
+                          <h3 className="text-center">Add Entry</h3>
                           <div className="card-body">
-                              <form>  
+                              <form id="addForm">  
                                   <div className="form-group">
                                       <label>ID: </label>
                                       <input placeholder="Id" name="id" className="form-control"
@@ -114,11 +119,12 @@ class AddExpenses extends Component {
                                          value={this.state.date} onChange={this.dateHandler} />
                                    </div>   
                                    <div className="form-group">
-                                      <label>Type: </label>
+                                      <label>Type (Savings/Expenses): </label>
                                       <input placeholder="Type" name="type" className="form-control"
                                          value={this.state.type} onChange={this.typeHandler} />
                                    </div>   
                                     <button className="btn btn-success" onClick={this.saveExpenses}> Save </button>
+                                    <button className="btn btn-warning" onClick={this.cancelEntry}> Reset </button>
                                     <button className="btn btn-danger" onClick={this.cancel.bind(this)}> Cancel </button>                    
                               </form>
                           </div>

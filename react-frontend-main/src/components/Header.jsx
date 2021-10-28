@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
+import NavStuff from './NavBar';
 
 class Header extends Component {
     render() {
         return (
-            <div>
-                <header>
-                    <nav className="navbar">
-                        <div><b>Expenses Management Application</b></div>
-                    </nav>
-                </header>
-            </div>
+                        <NavStuff/>
         );
     }
 }
