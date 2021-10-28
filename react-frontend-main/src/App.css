@@ -113,3 +113,11 @@
 .imageCont {
   text-align: center;
 }
+
+.appInfo {
+  text-align: center;
+}
+.aboutPage {
+  margin: 50px;
+  padding: 70px;
+}

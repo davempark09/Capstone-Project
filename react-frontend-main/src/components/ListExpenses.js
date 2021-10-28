@@ -72,7 +72,7 @@ class ListExpenses extends Component {
                                         <td>{Expenses.date}</td>
                                         <td>{Expenses.type}</td>
                                         <td>
-                                            <button onClick={() =>this.editExpenses(Expenses.id)} className="btn btn-primary">Update</button> 
+                                            <button onClick={() =>this.editExpenses(Expenses.id)} className="btn btn-success">Update</button> 
                                             <button onClick={() =>this.deleteExpenses(Expenses.id)} className="btn btn-danger">Delete</button> 
                                             <button onClick={() =>this.viewExpenses(Expenses.id)} className="btn btn-primary">View</button> 
                                         </td>

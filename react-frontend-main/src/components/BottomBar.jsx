@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBAnimation } from "mdbreact";
 
 const FooterPage = () => {
   return (
@@ -7,7 +7,9 @@ const FooterPage = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="title">Web Application Links</h5>
+            <MDBAnimation type="tada" infinite duration="3s">
+              <h5 className="title">Web Application Links</h5>
+            </MDBAnimation>
             <ul>
               <li className="list-unstyled">
                 <a href="/about-page">About App</a>
@@ -27,7 +29,9 @@ const FooterPage = () => {
             </ul>
           </MDBCol>
           <MDBCol md="6">
-            <h5 className="title">Social Media Links</h5>
+            <MDBAnimation type="shake" infinite duration="3s">
+              <h5 className="title">Social Media Links</h5>
+            </MDBAnimation>
             <ul>
               <li className="list-unstyled">
                 <a href="https://twitter.com/?lang=en">Twitter <i class="fab fa-twitter"></i></a>
@@ -47,7 +51,9 @@ const FooterPage = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://github.com/davempark09"> DavidPark Inc. </a>
+          <MDBAnimation type="bounce" infinite duration="1s">
+            &copy; {new Date().getFullYear()} Copyright: <a href="https://github.com/davempark09"> DavidPark Inc. </a>
+          </MDBAnimation>
         </MDBContainer>
       </div>
     </MDBFooter>
